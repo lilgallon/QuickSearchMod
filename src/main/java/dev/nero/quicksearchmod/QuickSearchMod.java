@@ -15,7 +15,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.inventory.*;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.client.util.InputMappings;
-import net.minecraft.inventory.container.PlayerContainer;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.util.SharedConstants;
 import net.minecraftforge.client.event.GuiContainerEvent;
@@ -50,7 +49,7 @@ public class QuickSearchMod
 
     // Default key to focus the search: CTRL + F
     public KeyBinding focusKeybinding = new KeyBinding(
-            "keys.quicksearchmod.focus",
+            "key.quicksearchmod.focus",
             KeyConflictContext.GUI,
             KeyModifier.CONTROL,
             InputMappings.Type.KEYSYM,
@@ -137,8 +136,9 @@ public class QuickSearchMod
         // There is no ContainedClosed event (as far as I know). So this function checks if the player has the container
         // closed. And if so, it stops the search (if it was enabled)
 
+
         if (Minecraft.getInstance().player != null) {
-            if (Minecraft.getInstance().player.openContainer instanceof PlayerContainer && this.isSearching) {
+            if (Minecraft.getInstance().currentScreen == null && this.isSearching) {
                 this.isSearching = false;
                 // this.searchingFor = ""; it may be better to not reset the search field every time
                 this.highlightedSlots = new ArrayList<>();
