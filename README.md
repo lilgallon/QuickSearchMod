@@ -1,4 +1,4 @@
-![logo](https://raw.githubusercontent.com/N3ROO/QuickSearchMod/MC_1.16.3/.github/resources/quicksearch.png)
+![logo](https://github.com/N3ROO/QuickSearchMod/raw/MC_1.16.3/.github/resources/quicksearch.png)
 
 # Quick Search
 ![github downloads](https://img.shields.io/github/downloads/n3roo/quicksearchmod/total.svg?label=github%20downloads)
@@ -10,7 +10,7 @@
 
 A mod to search for items in containers (chest, inventory, whatever).
 
-![demo](https://raw.githubusercontent.com/N3ROO/QuickSearchMod/MC_1.16.3/.github/resources/demo-1.0.0.gif)
+![demo](https://github.com/N3ROO/QuickSearchMod/raw/MC_1.16.3/.github/resources/demo-1.0.0.gif)
 
 ## Contributing
 Don't hesitate to contribute. Even if it's your first time, it's never too late to learn!
