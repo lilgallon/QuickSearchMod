@@ -2,11 +2,10 @@
 
 # Quick Search
 ![github downloads](https://img.shields.io/github/downloads/n3roo/quicksearchmod/total.svg?label=github%20downloads)
+[![curseforge downloads](http://cf.way2muchnoise.eu/full_409086_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/quick-search)
 ![issues](https://img.shields.io/github/issues/n3roo/quicksearchmod.svg)
 ![release](https://img.shields.io/github/release/n3roo/quicksearchmod.svg)
 ![build](https://img.shields.io/github/workflow/status/N3ROO/quicksearchmod/Build%20MC1.16.3?label=build%201.16.3)
-
-<!-- [![curseforge downloads](http://cf.way2muchnoise.eu/full_399201_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/aim-assistance) -->
 
 A mod to search for items in containers (chest, inventory, whatever).
 
