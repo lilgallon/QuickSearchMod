@@ -1,9 +1,17 @@
+/*
+ * Copyright (C) 2020 @N3ROO on Github (Lilian Gallon)
+ * This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public
+ * License as published by the Free Software Foundation; version 2. This program is distributed in the hope that it will
+ * be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ * PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General
+ * Public License along with this program.
+ */
+
 package dev.nero.quicksearchmod.utils;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.AbstractGui;
-import net.minecraft.inventory.container.Slot;
 
 public class RenderUtils {
 
@@ -48,13 +56,14 @@ public class RenderUtils {
     /**
      * It highlights the given slot
      * @param slotPos the slot pos
+     * @param color the color (hex format: 0xAARRGGBB)
      */
-    public static void highlightSlot(SlotPos slotPos) {
+    public static void highlightSlot(SlotPos slotPos, int color) {
         RenderUtils.fillRect(
                 slotPos.getX(),
                 slotPos.getY(),
                 16, 16, // hard coded values. the source code of minecraft uses that same hard coded value
-                0x77FFFFFF // white with some transparency
+                color // white with some transparency
         );
     }
 }
