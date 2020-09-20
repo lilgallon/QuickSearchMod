@@ -47,14 +47,14 @@ public class RenderUtils {
 
     /**
      * It highlights the given slot
-     * @param slot the slot
+     * @param slotPos the slot pos
      */
-    public static void highlightSlot(Slot slot) {
+    public static void highlightSlot(SlotPos slotPos) {
         RenderUtils.fillRect(
-                slot.xPos,
-                slot.yPos,
+                slotPos.getX(),
+                slotPos.getY(),
                 16, 16, // hard coded values. the source code of minecraft uses that same hard coded value
-                0x77000000 // black with some transparency
+                0x77FFFFFF // white with some transparency
         );
     }
 }
