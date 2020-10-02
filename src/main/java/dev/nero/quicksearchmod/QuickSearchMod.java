@@ -51,7 +51,6 @@ public class QuickSearchMod
     public KeyBinding focusKeybinding = new KeyBinding(
             "key.quicksearchmod.focus",
             KeyConflictContext.GUI,
-            KeyModifier.CONTROL,
             InputMappings.Type.KEYSYM,
             GLFW.GLFW_KEY_F,
             "keys.category.quicksearchmod"
@@ -98,6 +97,7 @@ public class QuickSearchMod
                 cancelEvent = false; // we want the repeat behaviour to work
             } else if (event.getKeyCode() == GLFW.GLFW_KEY_ESCAPE) {
                 this.isSearching = false;
+                this.highlightedSlots = new ArrayList<>();
             }
 
             event.setCanceled(cancelEvent);
@@ -135,15 +135,15 @@ public class QuickSearchMod
     private void onClientTickEvent(final TickEvent.ClientTickEvent event) {
         // There is no ContainedClosed event (as far as I know). So this function checks if the player has the container
         // closed. And if so, it stops the search (if it was enabled)
-
-
+/*
         if (Minecraft.getInstance().player != null) {
+            System.out.println(Minecraft.getInstance().currentScreen);
             if (Minecraft.getInstance().currentScreen == null && this.isSearching) {
                 this.isSearching = false;
                 // this.searchingFor = ""; it may be better to not reset the search field every time
                 this.highlightedSlots = new ArrayList<>();
             }
-        }
+        }*/
     }
 
     /***************************************************************************************/
