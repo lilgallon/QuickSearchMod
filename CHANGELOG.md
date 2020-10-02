@@ -2,7 +2,7 @@
 
 - Search results are now cleared when closing a container
 - Search results are now computed when turning search field on (before it waited for the first input)
-
+- Changed default keybind to `F`
 
 ## Version 1.0.0 for Minecraft 1.16.3
 
