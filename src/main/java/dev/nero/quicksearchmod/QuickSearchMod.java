@@ -109,6 +109,7 @@ public class QuickSearchMod
             }
 
             this.isSearching = true;
+            this.updateHighlightedSlots();
         }
     }
 
